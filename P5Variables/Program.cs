@@ -1,10 +1,15 @@
 ﻿
-string a = "Hello";
-string b = "World";
-string c = "Forsbergs";
+string a;
+a = "Hello";
+Console.WriteLine(a);
+  
+a = "World"; 
+Console.WriteLine(a);
 
+string b = a;
+Console.WriteLine(b);
+
+a = "Forsbergs";
 Console.WriteLine(a);
 Console.WriteLine(b);
-Console.WriteLine(b);
-Console.WriteLine(c);
-Console.WriteLine(b);
+

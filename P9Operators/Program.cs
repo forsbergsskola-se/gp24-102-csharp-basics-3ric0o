@@ -14,7 +14,7 @@ int Minutes = Remainingseconds2 / 60;
 
 int Seconds = Remainingseconds3;
 
-double totalDays = Userinput / 86400;
+double totalDays = (double)Userinput / 86400;
 
 Console.WriteLine("Seconds: " + Seconds);
 Console.WriteLine("Minutes: " + Minutes);

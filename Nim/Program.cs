@@ -39,7 +39,7 @@ while (matchesNum > 0)
     }
     else if (matchesNum < 2)
     {
-        Console.WriteLine(isPlayer ? "You Win!" : "You Lost!");
+        Console.WriteLine(isPlayer ? "You Win!" : "You Lose!");
         break;
     }
 }

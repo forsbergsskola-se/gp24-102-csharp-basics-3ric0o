@@ -1,4 +1,6 @@
-﻿Console.WriteLine("Welcome to Nim!");
+﻿Game:
+
+Console.WriteLine("Welcome to Nim!");
 Console.WriteLine("|||||||||||||||||||||||| (24)");
 
 int userInput = 10;
@@ -14,7 +16,7 @@ while (matchesNum > 0)
 
     if (isPlayer)
     {
-        Console.WriteLine("\nHow many matches do you want to draw?");
+        Console.WriteLine("\nHow many matches do you want to draw?\n");
         userInput = Int32.Parse(Console.ReadLine());
 
         while (userInput > 3)
@@ -25,7 +27,7 @@ while (matchesNum > 0)
     }
     else
     {
-            Console.WriteLine("\nThe Ai Draws " + Ai + " matches.");
+            Console.WriteLine("\n\nThe Ai Draws " + Ai + " matches. \n");
     }
     
     matchesNum -= isPlayer ? userInput : Ai;
@@ -39,7 +41,30 @@ while (matchesNum > 0)
     }
     else if (matchesNum < 2)
     {
-        Console.WriteLine(isPlayer ? "You Win!" : "You Lose!");
+        Console.WriteLine(isPlayer ? "You Win!\n" : "You Lose!\n");
         break;
     }
 }
+Console.WriteLine("Thanks for Playing!\nDo you want to play again. (Y/N)");
+    string again = Console.ReadLine();
+
+    while (again != "Y" || again != "N")
+    {
+        {
+            Console.WriteLine("Please answer 'Y' (Yes) or 'N' (No).");
+            again = Console.ReadLine();
+        }
+        if (again == "N")
+        {
+            Console.WriteLine("\nOK... :C");
+            break;
+        }
+
+        if (again == "Y")
+        {
+            goto Game;
+        }
+    }
+        
+    
+    

@@ -23,4 +23,6 @@ Console.WriteLine("Days: " + Days);
 Console.WriteLine(Days + "." + Hours + ":" + Minutes + ":" + Seconds);
 Console.WriteLine("In total, that's " + totalDays);
 
+Console.Clear();
+
 
